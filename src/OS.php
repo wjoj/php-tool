@@ -1,5 +1,7 @@
 <?php
 
+namespace Wjoj\Tool;
+
 /**
  * system information
  * @author ccm wjoj
