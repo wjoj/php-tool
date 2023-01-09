@@ -2,6 +2,11 @@
 
 namespace Wjoj\Tool;
 
+/**
+ * Summary of Demo
+ * @author ccm wjoj
+ * @copyright (c) 2023 01
+ */
 class Demo
 {
     /**
