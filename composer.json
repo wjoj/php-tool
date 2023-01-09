@@ -1,0 +1,15 @@
+{
+    "name": "wjoj/tool",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Wjoj\\Tool\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "wjoj"
+        }
+    ],
+    "require": {}
+}
