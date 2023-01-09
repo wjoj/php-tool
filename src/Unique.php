@@ -3,14 +3,14 @@
 namespace Wjoj\Tool;
 
 /**
- * Summary of Demo
+ * Unique
  * @author ccm wjoj
  * @copyright (c) 2023 01
  */
-class Demo
+class Unique
 {
     /**
-     * 获取guid
+     * get guid
      * @return string
      */
     public static function guid()
