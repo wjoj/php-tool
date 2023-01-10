@@ -7,10 +7,18 @@
             "Wjoj\\Tool\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Wjoj\\Tool\\Tests": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "wjoj"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*"
+    }
 }

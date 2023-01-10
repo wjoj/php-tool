@@ -4,8 +4,6 @@ require_once __DIR__ . '/../src/Path.php';
 
 use Wjoj\Tool\Path;
 
-
-
 $path = new Path('http://localhost/cde/cdd');
 $path2 = $path->new('/test.php');
 echo $path;
