@@ -39,7 +39,7 @@ class File
      * @param string $path
      * @return bool
      */
-    public static function deleteDir(string $path)
+    public static function deleteDir(string $path): bool
     {
         return deleteDir($path);
     }
@@ -50,7 +50,7 @@ class File
      * @param mixed $content
      * @return string
      */
-    public static function temporaryFile($name, $content)
+    public static function temporaryFile($name, $content): string
     {
         $file = DIRECTORY_SEPARATOR .
             trim(sys_get_temp_dir(), DIRECTORY_SEPARATOR) .

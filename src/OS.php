@@ -21,7 +21,7 @@ class OS
      * windows or not
      * @return bool
      */
-    public static function isOsWindows()
+    public static function isOsWindows(): bool
     {
         return self::os() == 'Windows';
     }
@@ -29,7 +29,7 @@ class OS
      * Linux or not
      * @return bool
      */
-    public static function isOsLinux()
+    public static function isOsLinux(): bool
     {
         return self::os() == 'Linux';
     }
@@ -37,7 +37,7 @@ class OS
      * Mac or not
      * @return bool
      */
-    public static function isOsMac()
+    public static function isOsMac(): bool
     {
         return self::os() == 'Darwin';
     }
