@@ -2,7 +2,12 @@
 
 spl_autoload_register(function ($class_name) {
     $cnames = explode(DIRECTORY_SEPARATOR, $class_name);
-    require_once __DIR__ . '/../src/' .  $cnames[count($cnames) - 1] . '.php';
+    $file = __DIR__ . '/../src/' .  $cnames[count($cnames) - 1] . '.php';
+    if (file_exists($file)) {
+        require_once $file;
+        return true;
+    }
+    return false;
 });
 
 
