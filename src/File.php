@@ -43,4 +43,26 @@ class File
     {
         return deleteDir($path);
     }
+
+    /**
+     * Summary of temporaryFile
+     * @param string $name
+     * @param mixed $content
+     * @return string
+     */
+    public static function temporaryFile($name, $content)
+    {
+        $file = DIRECTORY_SEPARATOR .
+            trim(sys_get_temp_dir(), DIRECTORY_SEPARATOR) .
+            DIRECTORY_SEPARATOR .
+            ltrim($name, DIRECTORY_SEPARATOR);
+
+        file_put_contents($file, $content);
+
+        register_shutdown_function(function () use ($file) {
+            unlink($file);
+        });
+
+        return $file;
+    }
 }
