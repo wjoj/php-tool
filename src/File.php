@@ -1,4 +1,7 @@
 <?php
+/**
+ * 删除文件夹和文件
+ */
 if (function_exists("deleteDir")){
     function deleteDir(string $path)
     {
@@ -48,7 +51,7 @@ class File
     }
 
     /**
-     * Summary of temporaryFile
+     * 缓存文件后释放
      * @param string $name
      * @param mixed $content
      * @return string
