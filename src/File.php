@@ -2,7 +2,7 @@
 /**
  * 删除文件夹和文件
  */
-if (function_exists("deleteDir")){
+if (!function_exists("deleteDir")){
     function deleteDir(string $path)
     {
         if (!is_dir($path)) {
