@@ -1,4 +1,7 @@
 <?php
+
+namespace Wjoj\Tool;
+
 /**
  * 删除文件夹和文件
  */
