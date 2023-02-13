@@ -65,8 +65,10 @@ class File
             trim(sys_get_temp_dir(), DIRECTORY_SEPARATOR) .
             DIRECTORY_SEPARATOR .
             ltrim($name, DIRECTORY_SEPARATOR);
-
-        file_put_contents($file, $content);
+            
+       if (file_put_contents($file, $content)===false){
+           throw new Error(error_get_last()["message"]);
+       }
 
         register_shutdown_function(function () use ($file) {
             unlink($file);
